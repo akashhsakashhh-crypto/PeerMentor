@@ -1,0 +1,222 @@
+
+.junior-dashboard {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 30px;
+  color: #1e293b;
+}
+
+.junior-header {
+  margin-bottom: 30px;
+}
+
+.junior-header h1 {
+  font-size: 28px;
+  margin-bottom: 8px;
+  color: #1e293b;
+}
+
+.junior-header p {
+  color: #64748b;
+  font-size: 15px;
+}
+
+.junior-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  margin-bottom: 35px;
+}
+
+.junior-stat-card {
+  background: #ffffff;
+  padding: 22px;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.junior-stat-card h3 {
+  font-size: 14px;
+  font-weight: 500;
+  color: #64748b;
+  margin-bottom: 12px;
+}
+
+.junior-stat-card p {
+  font-size: 28px;
+  font-weight: 700;
+  color: #2563eb;
+}
+
+.junior-requests h2 {
+  font-size: 21px;
+  margin-bottom: 20px;
+}
+
+.junior-request-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 22px;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.junior-request-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 15px;
+}
+
+.junior-request-top h3 {
+  font-size: 18px;
+  color: #1e293b;
+}
+
+.junior-request-card p {
+  color: #64748b;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 8px;
+}
+
+.junior-request-card strong {
+  color: #334155;
+}
+
+.request-status {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.request-status.pending {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.request-status.accepted {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.request-status.rejected {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.junior-loading,
+.junior-error {
+  padding: 30px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.junior-error {
+  color: #dc2626;
+}
+
+@media (max-width: 768px) {
+  .junior-dashboard {
+    padding: 18px;
+  }
+
+  .junior-stats {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .junior-header h1 {
+    font-size: 23px;
+  }
+
+  .junior-request-top {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .junior-stat-card {
+    padding: 16px;
+  }
+}
+
+/* Junior Session Management */
+
+.junior-sessions {
+  margin-top: 35px;
+}
+
+.junior-sessions-heading {
+  margin-bottom: 20px;
+}
+
+.junior-sessions-heading h2 {
+  margin-bottom: 8px;
+}
+
+.junior-sessions-heading p {
+  color: #64748b;
+}
+
+.junior-session-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 22px;
+  margin-bottom: 16px;
+}
+
+.junior-session-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 15px;
+}
+
+.junior-session-card p {
+  color: #64748b;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.session-status {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.session-status.upcoming {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+
+.session-status.completed {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.meeting-link {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 9px 16px;
+  background: #2563eb;
+  color: white;
+  text-decoration: none;
+  border-radius: 7px;
+  font-size: 14px;
+}
+
+.meeting-link:hover {
+  background: #1d4ed8;
+}
+

@@ -1,0 +1,129 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Rahul Sharma",
+      "role": "senior",
+      "year": 4,
+      "company": "Amazon",
+      "skills": [
+        "DSA",
+        "Java",
+        "Spring Boot",
+        "AWS"
+      ],
+      "availability": [
+        "Monday 6-8 PM",
+        "Saturday 10-12 AM"
+      ],
+      "bio": "Software engineer at Amazon. I help students prepare for DSA and technical interviews.",
+      "rating": 4.8,
+      "jobRole": "Software Development Engineer",
+      "experience": 2
+    },
+    {
+      "id": 2,
+      "name": "Ananya Rao",
+      "role": "senior",
+      "year": 4,
+      "company": "Microsoft",
+      "skills": [
+        "Web Development",
+        "Projects",
+        "Cloud"
+      ],
+      "availability": [
+        "Tue 7-9 PM",
+        "Sun 4-6 PM"
+      ],
+      "bio": "Full-stack developer. I can guide you on projects and cloud.",
+      "rating": 4.6
+    },
+    {
+      "id": 3,
+      "name": "Vikram Singh",
+      "role": "senior",
+      "year": 4,
+      "company": "Google",
+      "skills": [
+        "DSA",
+        "Placement",
+        "Projects"
+      ],
+      "availability": [
+        "Wed 8-10 PM",
+        "Sat 5-7 PM"
+      ],
+      "bio": "Cracked product company interviews. Let's plan your prep.",
+      "rating": 4.9
+    },
+    {
+      "id": 4,
+      "name": "Priya Nair",
+      "role": "senior",
+      "year": 4,
+      "company": "Flipkart",
+      "skills": [
+        "Java",
+        "Cloud",
+        "Web Development"
+      ],
+      "availability": [
+        "Thu 6-8 PM",
+        "Sun 10-12 AM"
+      ],
+      "bio": "Java backend and AWS. Ask me anything about OOP.",
+      "rating": 4.5
+    }
+  ],
+  "requests": [
+    {
+      "id": 1,
+      "studentId": 101,
+      "studentName": "Akash",
+      "mentorId": 1,
+      "mentorName": "Rahul Sharma",
+      "message": "I need help preparing for DSA interviews.",
+      "status": "accepted",
+      "createdAt": "2026-11-14T11:17:27.245Z",
+      "updatedAt": "2026-11-15T05:57:13.709Z"
+    },
+    {
+      "id": 2,
+      "studentId": 101,
+      "studentName": "Akash",
+      "mentorId": 1,
+      "mentorName": "Rahul Sharma",
+      "message": "because i am little bit weekin dsa",
+      "status": "pending",
+      "createdAt": "2026-11-14T11:28:36.948Z"
+    },
+    {
+      "id": 3,
+      "studentId": "6af98c27800c9e2faed9f19b",
+      "studentName": "hemanth",
+      "mentorId": 2,
+      "mentorName": "Ananya Rao",
+      "message": "ghkk",
+      "status": "pending",
+      "createdAt": "2026-11-15T10:54:39.953Z"
+    }
+  ],
+  "sessions": [
+    {
+      "id": 1,
+      "requestId": 1,
+      "studentId": 101,
+      "studentName": "Akash",
+      "mentorId": 1,
+      "mentorName": "Rahul Sharma",
+      "date": "2026-11-20",
+      "time": "06:00 PM",
+      "meetingLink": "https://meet.google.com/abc-defg-hij",
+      "status": "upcoming",
+      "createdAt": "2026-11-15T06:45:20.269Z"
+    }
+  ],
+  "goals": [],
+  "feedback": []
+}

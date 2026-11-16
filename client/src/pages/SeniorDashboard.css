@@ -1,0 +1,480 @@
+
+/* ==========================================
+   SENIOR DASHBOARD
+========================================== */
+
+.senior-dashboard {
+  max-width: 1100px;
+  margin: auto;
+  padding: 30px;
+  color: #1e293b;
+}
+
+/* ==========================================
+   DASHBOARD HEADER
+========================================== */
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.dashboard-label {
+  color: #6366f1;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 12px;
+}
+
+.dashboard-header h1 {
+  margin: 5px 0;
+  font-size: 30px;
+}
+
+.dashboard-header p {
+  color: #64748b;
+}
+
+.mentor-avatar {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background: #6366f1;
+  color: white;
+  display: grid;
+  place-items: center;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/* ==========================================
+   MENTOR PROFILE CARD
+========================================== */
+
+.mentor-info {
+  background: #eef2ff;
+  padding: 22px;
+  border-radius: 14px;
+  margin-bottom: 25px;
+}
+
+.mentor-info h2 {
+  margin: 0 0 8px;
+}
+
+.mentor-info p {
+  margin: 5px 0;
+  color: #475569;
+}
+
+.profile-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
+.edit-profile-button {
+  background: #4f46e5;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.edit-profile-button:hover {
+  background: #4338ca;
+}
+
+.profile-details {
+  margin-top: 15px;
+  line-height: 1.8;
+  overflow-wrap: anywhere;
+}
+
+.profile-details p {
+  margin: 8px 0;
+  color: #475569;
+}
+
+/* ==========================================
+   PROFILE EDIT FORM
+========================================== */
+
+.profile-form {
+  margin-top: 20px;
+}
+
+.profile-form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+.profile-field {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.profile-field label {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.profile-field input,
+.profile-field textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 11px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: inherit;
+  background: white;
+}
+
+.profile-field input:focus,
+.profile-field textarea:focus {
+  outline: none;
+  border-color: #6366f1;
+}
+
+.profile-field small {
+  color: #64748b;
+  font-size: 12px;
+}
+
+.full-width {
+  grid-column: 1 / -1;
+}
+
+.profile-form-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.save-profile-button,
+.cancel-profile-button {
+  border: none;
+  padding: 11px 22px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.save-profile-button {
+  background: #16a34a;
+  color: white;
+}
+
+.save-profile-button:hover {
+  background: #15803d;
+}
+
+.cancel-profile-button {
+  background: #e2e8f0;
+  color: #334155;
+}
+
+.save-profile-button:disabled,
+.cancel-profile-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.success-message {
+  color: #15803d;
+  margin-top: 12px;
+  font-weight: 600;
+}
+
+/* ==========================================
+   DASHBOARD STATISTICS
+========================================== */
+
+.stats-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  margin-bottom: 35px;
+}
+
+.stat-card {
+  padding: 20px;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  background: white;
+}
+
+.stat-card h3 {
+  font-size: 28px;
+  margin: 0 0 8px;
+}
+
+.stat-card p {
+  color: #64748b;
+  margin: 0;
+}
+
+.pending-stat h3 {
+  color: #d97706;
+}
+
+.accepted-stat h3 {
+  color: #16a34a;
+}
+
+.rejected-stat h3 {
+  color: #dc2626;
+}
+
+/* ==========================================
+   INCOMING REQUESTS
+========================================== */
+
+.requests-section {
+  margin-top: 20px;
+}
+
+.requests-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.requests-heading h2 {
+  margin-bottom: 5px;
+}
+
+.requests-heading p {
+  color: #64748b;
+  margin-top: 0;
+}
+
+.refresh-button {
+  background: #e0e7ff;
+  color: #4338ca;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.request-card {
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 15px;
+  background: white;
+}
+
+.request-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.request-top h3 {
+  margin: 0 0 5px;
+}
+
+.request-top p {
+  color: #64748b;
+  margin: 0;
+}
+
+.status-badge {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.status-badge.pending {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.status-badge.accepted {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.status-badge.rejected {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.request-message {
+  background: #f8fafc;
+  padding: 12px;
+  border-radius: 8px;
+  margin-top: 18px;
+}
+
+.request-message p {
+  margin-bottom: 0;
+  color: #475569;
+}
+
+.request-date {
+  font-size: 12px;
+  color: #94a3b8;
+  margin-top: 15px;
+}
+
+.request-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.accept-button,
+.reject-button {
+  border: none;
+  border-radius: 8px;
+  padding: 10px 22px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.accept-button {
+  background: #16a34a;
+  color: white;
+}
+
+.reject-button {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.accept-button:hover {
+  background: #15803d;
+}
+
+.reject-button:hover {
+  background: #fecaca;
+}
+
+/* ==========================================
+   ERROR MESSAGES
+========================================== */
+
+.error-message {
+  color: #dc2626;
+}
+
+/* ==========================================
+   RESPONSIVE DESIGN
+========================================== */
+
+@media (max-width: 650px) {
+  .senior-dashboard {
+    padding: 18px;
+  }
+
+  .stats-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .dashboard-header h1 {
+    font-size: 23px;
+  }
+
+  .profile-heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .profile-form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .full-width {
+    grid-column: auto;
+  }
+}
+
+/* Session Management */
+
+.session-scheduling {
+  margin-top: 16px;
+}
+
+.schedule-session-button,
+.complete-session-button {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 7px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.session-scheduled-label {
+  color: #15803d;
+  font-weight: 600;
+}
+
+.session-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 15px;
+  padding: 18px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+}
+
+.session-form input {
+  padding: 10px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+}
+
+.session-form button {
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background: #2563eb;
+  color: white;
+}
+
+.sessions-section {
+  margin-top: 30px;
+}
+
+.session-card {
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 15px;
+}
+
+.session-card p {
+  margin: 10px 0;
+}
+
+.session-card a {
+  display: inline-block;
+  color: #2563eb;
+  margin-top: 10px;
+}
+
+.complete-session-button {
+  display: block;
+  background: #15803d;
+}
+
